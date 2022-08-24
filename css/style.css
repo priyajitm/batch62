@@ -19,8 +19,8 @@ Selectors
 
 body {
     background-color: bisque;
-    height: 50vh;
-    width: 50vw;
+    /* height: 50vh;
+    width: 50vw; */
 }
 
 /* ID Selector */
@@ -49,19 +49,20 @@ body {
 h1, p {
     font-weight: 700;
 }
+*/
 
 .box {
     background-color: rgb(212, 50, 50);
-    width: 100%;
-   
+    width: 1000px;
 }
 
 .boxnew {
-    width: 75%;
-    min-width: 500px;
+    width: 10%;
+    max-width: 500px;
+    min-width: 300px;
     height: 300px;
-    background-color: aqua;
-} */
+    background-color: rgb(0, 4, 255);
+} 
 
 
 
