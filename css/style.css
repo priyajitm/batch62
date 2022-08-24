@@ -1,0 +1,69 @@
+/* 
+Selectors 
+
+1. ID Selector
+2. Class Selector
+3. Element Name Selector
+5. Universal Selector
+6. Group Selector
+
+*/
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+body {
+    background-color: bisque;
+    height: 50vh;
+    width: 50vw;
+}
+
+/* ID Selector */
+/* #header3 {
+    color: brown;
+} */
+
+/* Class Selector */
+/* .header2 {
+    color: aqua;
+} */
+
+/* Element name Selector */
+/* h1 {
+    color: chartreuse;
+    background-color: blue;
+} */
+
+
+/* Group Selector */
+
+/* h1, .header2, #header3 {
+    font-weight: 700;
+}
+
+h1, p {
+    font-weight: 700;
+}
+
+.box {
+    background-color: rgb(212, 50, 50);
+    width: 100%;
+   
+}
+
+.boxnew {
+    width: 75%;
+    min-width: 500px;
+    height: 300px;
+    background-color: aqua;
+} */
+
+
+
+
+

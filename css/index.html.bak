@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        h2 {
+            color: blue;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        .header2 {
+            font-size: 18px;
+        }
+
+        #header3 {
+            color: green;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <h1 style="color: red;">This is a Header</h1> -->
+    <h1>This is a Header</h1>
+    <h2 class="header2">This is header 2</h2>
+    <h2 class="header2">This is header 2</h2>
+    <h2 class="header2">This is header 2</h2>
+    <h2>This is header 2</h2>
+    <h2>This is header 2</h2>
+    <h3 id="header3" class="headerclass">This is header 3</h3>
+    <p>This is paragraph one</p>
+    <p>This is paragraph two</p>
+    <h4>This is heading 4</h4>
+    <div class="box">
+        <div class="boxnew">I am a box</div>
+    </div>
+</body>
+</html>
