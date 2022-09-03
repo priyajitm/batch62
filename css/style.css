@@ -1,70 +1,71 @@
-/* 
-Selectors 
-
-1. ID Selector
-2. Class Selector
-3. Element Name Selector
-5. Universal Selector
-6. Group Selector
-
-*/
-
-/* Universal Selector */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap');
 
 body {
-    background-color: bisque;
-    /* height: 50vh;
-    width: 50vw; */
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* ID Selector */
-/* #header3 {
-    color: brown;
-} */
-
-/* Class Selector */
-/* .header2 {
-    color: aqua;
-} */
-
-/* Element name Selector */
-/* h1 {
-    color: chartreuse;
-    background-color: blue;
-} */
-
-
-/* Group Selector */
-
-/* h1, .header2, #header3 {
-    font-weight: 700;
+/* .box {
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    color: white;
+    border: 5px solid black;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding: 15px 10px 20px 5px;
+    padding: 15px 10px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin: 15px 10px 20px 5px;
+     margin: 15px 10px;
+    margin: 20px 10px 5px;
 }
 
-h1, p {
-    font-weight: 700;
-}
+.box1   {
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+} */
+
+/*
+Positions
+
+Static
+Relative
+Absolute
+Fixed
+Sticky
+
 */
 
-.box {
-    background-color: rgb(212, 50, 50);
-    width: 1000px;
+
+.brown, .yellow, .green {
+    height: 150px;
+    width: 150px;
 }
 
-.boxnew {
-    width: 10%;
-    max-width: 500px;
-    min-width: 300px;
-    height: 300px;
-    background-color: rgb(0, 4, 255);
-} 
+.brown {
+    background-color: brown;
+}
 
+.yellow {
+    background-color: yellow;
+}
 
+.green {
+    background-color: green;
+    position: sticky;
+    top: 50px;
+}
 
-
-
+ul li {
+    font-family: ;
+}
