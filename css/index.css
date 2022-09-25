@@ -8,17 +8,17 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: aqua;
 }
 
 .card-wrapper {
     border: 1px solid black;
     padding: 10px;
-    height: 80vh;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    flex-wrap: wrap;
-    /* flex-direction: column; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
     gap: 30px 10px;
 }
 
@@ -34,16 +34,15 @@ body {
     width: 100%;
 }
 
-.card:nth-child(1) {
-    /* order: 5; */
+/* .card:nth-child(1) {
+    order: 5;
     flex-basis: 300px;
     flex-grow: 1;
     align-self: flex-start;
 }
 
 .card:nth-child(2) {
-    /* order: 2; */
-    /* grow shrink idealSize */
+    order: 2;
     flex: 0 0 400px;
     align-self: center;
     display: flex;
@@ -51,12 +50,12 @@ body {
 
 }
 .card:nth-child(3) {
-    /* order: 4; */
+    order: 4;
     flex-basis: 300px;
     flex-grow: 1;
     align-self: flex-end;
     
-}
+} */
 /* .card:nth-child(4) {
     order: 6;
 }
@@ -74,4 +73,31 @@ body {
 
 .card-body {
     padding: 10px;
+}
+
+
+
+@media (min-width: 1024px) {
+    .card-wrapper {
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 767px) {
+    body {
+        background-color: aqua;
+    }
 }

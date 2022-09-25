@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-rows: auto
+}
+
+.item {
+    height: 100px
+}
+
+.item:nth-child(1) {
+    background-color: aqua;
+}
+
+.item:nth-child(2) {
+    background-color: rgb(88, 31, 167);
+}
+
+.item:nth-child(3) {
+    background-color: rgb(96, 104, 104);
+}
+
+.item:nth-child(4) {
+    background-color: rgb(138, 216, 21);
+}
+
+.item:nth-child(5) {
+    background-color: rgb(190, 171, 23);
+}
+
+.item:nth-child(6) {
+    background-color: rgb(188, 88, 21);
+}
+
+.item:nth-child(7) {
+    background-color: rgb(142, 12, 47);
+}

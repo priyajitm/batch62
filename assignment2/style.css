@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #192F60;
+}
+
+header {
+    background-color: #CE0505;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 32px;
+    color: #EB2929;
+    font-weight: 900;
+}
+
+nav {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.btn {
+    padding: 15px 10px;
+    background-color: #CE0505;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.heading {
+    font-weight: 500;
+}
+
+aside {
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 20px 30px 30px;
+    flex: 1;
+}
+
+.filter {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.location, .cuisine, .cost, .sort  {
+    font-size: 14px;
+    margin: 30px!important;
+}
+
+
+
+.location select {
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+aside div {
+    margin-top: 15px;
+}
+
+main {
+    flex: 3
+}
+
+.card {
+    box-shadow: 0px 3px 6px #00000029;
+    margin: 34px 45px;
+}
+
+.card .info {
+    display: flex;
+    padding: 30px;
+    gap: 40px;
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 25px;
+}
+
+.card .details .title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+hr {
+    width: 90%;
+}
+
+.card-footer {
+    padding: 20px;
+}
+
+.pagination {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.box {
+    padding: 10px 15px;
+    border: 1px solid #8C96AB;
+    border-radius: 8px;
+}
