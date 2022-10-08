@@ -13,30 +13,25 @@ we can add another line here as well
 
 let greet = undefined; // variable data declared
 
-greet = 'hello everyone' // assigning a data to the variable using assignment operator
+greet = "hello everyone"; // assigning a data to the variable using assignment operator
 
-let firstName = 'Priyajit'; 
-let lastName = 'Mukherjee'
-let role = 'instructor';
-
-
-
+// let firstName = 'Priyajit';
+// let lastName = 'Mukherjee'
+// let role = 'instructor';
 
 // hoisting
 
-var placeName = 'New Delhi'
+// var placeName = 'New Delhi'
 
-var placeName = 'Mumbai'
+// var placeName = 'Mumbai'
 
 // constant
-const petName = 'max'
+// const petName = 'max'
 
-const pi = '3.14'
-const dateOfBirth = '1-1-2012'
+// const pi = '3.14'
+// const dateOfBirth = '1-1-2012'
 
-firstName = 'john'
-
-
+// firstName = 'john'
 
 //petName = 'shiro'
 
@@ -88,9 +83,9 @@ Data Types
 - Reference
 
 1. Object
-    1. Array
-    2. Function
-    3. Date
+2. Array
+3. Function
+4. Date
 
 String 
 
@@ -98,15 +93,129 @@ Template String
 
 */
 
+// let someThingOne = 'this is a value'
+// let someThingTwo = "this is another value"
+// let somethingThree = `this is a different value`
+// let somethingFour = "i hate summer, as during summer it's very hot"
+// let somethingFive = 'i hate summer, as during summer it\'s very hot'
 
-let someThingOne = 'this is a value'
-let someThingTwo = "this is another value"
-let somethingThree = `this is a different value`
-let somethingFour = "i hate summer, as during summer it's very hot"
-let somethingFive = 'i hate summer, as during summer it\'s very hot'
+// let myName = 'Priyajit Mukherjee'
 
-let myName = 'Priyajit Mukherjee'
+// let greeting = `Hello Mr. ${myName}`
 
-let greeting = `Hello Mr. ${myName}`
+// const count = 2
+// const price = 5.99
 
-console.log(greeting)
+// const totalPrice = count * price
+
+// const totalPriceNew = count * 'price'
+
+// const res = 2 / 0
+
+// const isSunday = false
+// const isSaturday = true
+
+// const age = undefined
+// let address;
+
+// const job = undefined || null
+
+// const newString = 'hello'
+// const newNum = 2
+// const newBool = false
+// let newUndef;
+// const newNull = null
+
+/* 
+Falsy Values:
+
+- false
+- undefined
+- null
+- ''
+- 0
+-NaN
+
+
+*/
+
+// const someNum = 25
+// const someOtherNum = 2
+
+// const resOne = ''
+
+//const response = prompt('What is your name?', 'First Name', 'another parameter')
+
+// const response = confirm('Are you above 18?')
+// console.log(response)
+
+// console.log(`This is my score: ${someNum}`)
+
+// const someStr = 200
+
+// const resNew = Number(someStr)
+// const resNew = parseInt(someStr)
+
+// const resNew = String(someStr)
+// const resNew = someStr.toString()
+
+// console.log(Boolean(0))
+
+/* 
+Object Data Type
+
+// Object Constructor
+let firstObj = new Object()
+
+// Object Literal
+let secondObj = {} 
+
+// Object - key:value pair
+const player = { 
+    name: 'john',
+    age: '18'
+}
+
+Dot Notation
+player.sports
+
+Bracket Notation
+player['sports']
+
+*/
+
+let ageKeyName = "old";
+
+//delete player.age
+//player['age'] = 20
+
+// player.spouse = 'jane doe'
+// player['children'] = null
+
+// player.age = 19
+// player['in Current Team'] = false
+
+// delete player.netWorth
+// delete player['children']
+
+// Player is added to the league and has assigned a Team
+// Player is a added to the league and has not been assigned a team
+// Player is not in the league
+
+const player = {
+  name: "john doe",
+  [ageKeyName]: 17,
+  sports: "football",
+  "in Current Team": true,
+  teamName: undefined,
+  netWorth: null,
+  key: "lala",
+};
+
+for (key in player) {
+  console.log("Object Keys", key);
+}
+
+for (key in player) {
+  console.log("Object Key Values", player[key]);
+}
