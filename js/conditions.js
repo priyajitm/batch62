@@ -57,9 +57,18 @@ if (!condition) {
 //     console.log('hello')
 // }
 
-const val1 = 2 !== 2
-console.log(val1)
+const count = 2
 
-if (!val1) {
-    console.log('hey')
+switch(true) {
+    case 0:
+        console.log('score is zero')
+        break;
+    case (count < 3):
+        console.log('score is less')
+        break
+    case '3':
+        console.log('score is three')
+        break
+    default:
+        console.log('none of the conditions are true')
 }
