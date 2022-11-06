@@ -5,10 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src="scriptTwo.js"/>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <h1 onclick="alert('hello')">Hello Everyone</h1>
-    <p>This is a paragraph</p>
+   <div class="container">
+    <div>
+        <input id="new-task" placeholder="Add your task"/>
+        <button id="newtaskbtn">Add task</button>
+    </div>
+    <div class="pending-tasks" style="width: 300px; height: 350px; border: 1px solid black;"><h3>Pending Tasks</h3></div>
+    <div class="done-tasks" style="width: 300px; height: 350px; border: 1px solid black;">
+    <h3>Completed Tasks</h3>
+    </div>
+   </div>
+   <script src="todo.js"></script>
 </body>
 </html>

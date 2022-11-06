@@ -7,32 +7,64 @@
 //     console.log('take the med')
 //     console.log('give the med')
 // }
-let count = 0
 
-function addition(num1, num2) {
-    const result = num1 + num2
-    count = result
-    return console.log(count)
+
+// Function - First Class Citizen
+
+let isLoggedIn = false
+
+function greetUser () {
+    console.log('Hello! How are you?')
 }
 
-addition(20, 2)
 
-console.log(count)
-
-
-/* 
-
-Game Logic:
-- Rock-Paper: paper Wins
-- Paper-Scissor: Scissor Wins
-- Scissor-Rock: Rock Wins
-
-Steps
-- take input from user (rock, scissor, paper)
-- if input is empty, return an alert that input is empty
-- once you have an input from user, run a computer generated input
-- match the input from user and computer and run the game logic
-- declare the winner and alert on screen
+function takeInput(statement, task) {
+    if (statement) {
+        task()
+    }
+}
 
 
-*/
+
+takeInput(isLoggedIn, greetUser)
+
+
+const greetUserTwo = (username) => {
+    console.log('Hello! ' + username)
+    console.log('welcome')
+}
+
+
+
+
+const values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+function functionName (...params) {
+    console.log(params)
+    const initialVal = 0
+    const res = params.reduce((accumulator, currentItem, currIndex, array) => 
+       accumulator + currentItem, initialVal
+    )
+   
+    console.log(res)
+   
+}
+
+// functionName(...values)
+
+// Rest => Creates an array with all the values
+// Spread => Take values out of an array/object
+
+const someObj = {
+    a: 1,
+    b: 2,
+    c: 3
+}
+
+const ll = {...someObj}
+
+ll['b'] = 20
+
+console.log(someObj)
+console.log(ll)

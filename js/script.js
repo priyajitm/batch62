@@ -1,3 +1,4 @@
+// 'use strict'
 /* 
 This is a multiline comment
 we can add another line here as well
@@ -202,20 +203,96 @@ let ageKeyName = "old";
 // Player is a added to the league and has not been assigned a team
 // Player is not in the league
 
-const player = {
-  name: "john doe",
-  [ageKeyName]: 17,
-  sports: "football",
-  "in Current Team": true,
-  teamName: undefined,
-  netWorth: null,
-  key: "lala",
-};
+// const player = {
+//   name: "john doe",
+//   [ageKeyName]: 17,
+//   sports: "football",
+//   "in Current Team": true,
+//   teamName: undefined,
+//   netWorth: null,
+//   key: "lala",
+// };
 
-for (key in player) {
-  console.log("Object Keys", key);
+// for (key in player) {
+//   console.log("Object Keys", key);
+// }
+
+// for (key in player) {
+//   console.log("Object Key Values", player[key]);
+// }
+
+// let firstName = 'john'
+// let userName = firstName
+
+// firstName = 'jane'
+
+// const userObj = {
+//   firstName: 'john'
+// }
+
+// const player = userObj  // shallow copy
+
+// player['username'] = 'player1'
+
+
+// console.log(userObj, player)
+
+// Deep Copy / Deep Cloning
+
+// const people = {
+//   name: 'john'
+// }
+
+// const users = JSON.parse(JSON.stringify(people))
+
+// users['surname'] = 'doe'
+
+// console.log(people, users)
+
+/* 
+log in 
+logout
+get scores
+score increment
+score decrement
+change password
+change email
+*/
+
+// const player1  = {
+//   name: 'john doe',
+//   score: 0
+//   //login
+//   //logout
+// }
+
+// const player2 = {
+//   name: 'jane doe',
+//   score: 0
+//   //login
+//   //logout
+// }
+
+function player (name, score) {
+  const user = {}
+  user.name = name,
+  user.score = score,
+  user.login = function () {console.log('logged in')} 
+  return user
 }
 
-for (key in player) {
-  console.log("Object Key Values", player[key]);
+function User (name, role) {
+  this.name = name
+  this.role = role
+  this.login = function () {console.log('logged in')} 
 }
+
+const user1 = new User('name', 'role')
+
+// const user1 = new User('john', 'developer')
+
+
+// const player1 = player('john', 0)
+// const player2 = player('jane', 0)
+user1.login()
+ console.log(user1)
